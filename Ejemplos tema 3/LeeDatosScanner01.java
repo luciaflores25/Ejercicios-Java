@@ -1,23 +1,14 @@
-import java.util.Scanner
+import java.util.Scanner;
 public class LeeDatosScanner01{
   public static void main(String[] args) {
-    String linea;
+    Scanner s = new Scanner(System.in);
     
-    System.out.print("Por favor, introduce un número: ");
-    linea = System.console().readLine();
-    int primerNumero;
-    primerNumero = Integer.parseInt( linea );
+    System.out.print("Introduce tu nombre: ");
+    String nombre = s.nextLine();
     
-    System.out.print("Introduce otro, por favor: ");
-    int segundoNumero = Integer.parseInt( System.console().readLine() );
+    System.out.print("Introdce tu edad: ");
+    int edad = Integer.parseInt(s.nextLine());
     
-    int total;
-    
-    total = (2 * primerNumero) + segundoNumero;
-    
-    System.out.print("El primer número introducido es: " + primerNumero);
-    System.out.println(" y el segundo es " + segundoNumero);
-    System.out.print("El doble del primer número más el segundo es ");
-    System.out.print(total);    
+    System.out.println("Tu nombre es " + nombre + " y tu edad es " + edad);
   }
 }
