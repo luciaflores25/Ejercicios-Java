@@ -1,104 +1,110 @@
 public class Ejercicio10 {
   public static void main(String[] args) {
     
-    String horoscopo = "";
-
-    System.out.println("Introduce tu fecha de nacimiento y te diré cual es tu horóscopo.");
-    System.out.print("Introduzca el número del mes en el que naciste: ");
-    int mes = Integer.parseInt(System.console().readLine());
-    
-    System.out.print("Y ahora introduce el día del mes: ");
+  System.out.print("Introduce el número de día que naciste: ");
     int dia = Integer.parseInt(System.console().readLine());
-  
-    switch(mes) {
-      case 1:
-        if (dia < 21) {
-          horoscopo = "capricornio";
-        } else {
-          horoscopo = "acuario";
+    
+    System.out.print("Escribe el mes de nacimiento: ");
+    String mes = (System.console().readLine()).toLowerCase();
+
+    String horoscopo = "desconocido";
+    
+    switch (mes){
+      case "enero":
+        if (dia >= 1 && dia <= 20) {
+          horoscopo = "Capricornio";
+        } else if (dia > 20 && dia <= 31) {
+          horoscopo = "Acuario";
         }
         break;
-      case 2:
-        if (dia < 20) {
-          horoscopo = "acuario";
-        } else {
-          horoscopo = "piscis";
+      case "febrero":
+        if (dia >= 1 && dia <= 19) {
+          horoscopo = "Acuario";
+        } else if (dia >= 20 && dia <= 29) {
+          horoscopo = "Piscis";
         }
         break;
-      case 3:
-        if (dia < 21) {
-          horoscopo = "piscis";
-        } else {
-          horoscopo = "aries";
+      case "marzo":
+        if (dia >= 1 && dia <= 20) {
+          horoscopo = "Piscis";
+        } else if (dia >= 21 && dia <= 31) {
+          horoscopo = "Aries";
         }
         break;
-      case 4:
-        if (dia < 21) {
-          horoscopo = "aries";
-        } else {
-          horoscopo = "tauro";
+      case "abril":
+        if (dia >= 1 && dia <= 20) {
+          horoscopo = "Aries";
+        } else if (dia >= 21 && dia <= 30) {
+          horoscopo = "Tauro";
         }
         break;
-      case 5:
-        if (dia < 20) {
-          horoscopo = "tauro";
-        } else {
-          horoscopo = "géminis";
+      case "mayo":
+        if (dia >= 1 && dia <= 21) {
+          horoscopo = "Tauro";
+        } else if (dia >= 22 && dia <= 31) {
+          horoscopo = "Géminis";
         }
         break;
-      case 6:
-        if (dia < 22) {
-          horoscopo = "géminis";
-        } else {
-          horoscopo = "cáncer";
+      case "junio":
+        if (dia >= 1 && dia <= 21) {
+          horoscopo = "Géminis";
+        } else if (dia >= 22 && dia <= 30) {
+          horoscopo = "Cáncer";
         }
         break;
-      case 7:
-        if (dia < 22) {
-          horoscopo = "cáncer";
-        } else {
+      case "julio":
+        if (dia >= 1 && dia <= 22) {
+          horoscopo = "Cáncer";
+        } else if (dia >= 23 && dia <= 31) {
           horoscopo = "Leo";
         }
         break;
-      case 8:
-        if (dia < 24) {
-          horoscopo = "leo";
-        } else {
-          horoscopo = "virgo";
+      case "agosto":
+        if (dia >= 1 && dia <= 23) {
+          horoscopo = "Leo";
+        } else if (dia >= 24 && dia <= 31) {
+          horoscopo = "Virgo";
         }
         break;
-      case 9:
-        if (dia < 23) {
-          horoscopo = "virgo";
-        } else {
-          horoscopo = "libra";
+      case "septiembre":
+        if (dia >= 1 && dia <= 23) {
+          horoscopo = "Virgo";
+        } else if (dia >= 24 && dia <= 30) {
+          horoscopo = "Libra";
         }
         break;
-      case 10:
-        if (dia < 23) {
-          horoscopo = "libra";
-        } else {
-          horoscopo = "escorpio";
+      case "octubre":
+        if (dia >= 1 && dia <= 23) {
+          horoscopo = "Libra";
+        } else if (dia >= 24 && dia <= 31) {
+          horoscopo = "Escorpio";
         }
         break;
-      case 11:
-        if (dia < 23) {
-          horoscopo = "escorpio";
-        } else {
-          horoscopo = "sagitario";
+      case "noviembre":
+        if (dia >= 1 && dia <= 22) {
+          horoscopo = "Escorpio";
+        } else if (dia >= 23 && dia <= 30) {
+          horoscopo = "Sagitario";
         }
         break;
-      case 12:
-        if (dia < 21) {
-          horoscopo = "sagitario";
-        } else {
-          horoscopo = "capricornio";
+      case "diciembre":
+        if (dia >= 1 && dia <= 22) {
+          horoscopo = "Sagitario";
+        } else if (dia >= 23 && dia <= 31) {
+          horoscopo = "Capricornio";
         }
         break;
       default:
+        mes = "incorrecto";
+        break;
     }
-
-    System.out.print("Tu horóscopo según los datos que has introducido es " + horoscopo);
-
+    
+    if (mes != "incorrecto" && horoscopo != "desconocido") {
+      System.out.println("Tu fecha de nacimiento es el " + dia + " de " + mes + ".\n"
+          + " y tu horóscopo es: " + horoscopo);
+      
+    } else {
+      System.out.println("La fecha es incorrecta.");
+    }
   }
 }
