@@ -1,8 +1,10 @@
-public class Ejercicio4 {
+public class Ejercicio05 {
   public static void main(String[] args) {
     
-    for(int i = 320; i >= 160; i -= 20) {
+     int i = 320;
+    while (i >= 160) {
     System.out.println(i);
+    i -=20;
     }
   }
 }

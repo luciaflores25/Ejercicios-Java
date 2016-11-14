@@ -1,10 +1,10 @@
-public class Ejercicio6 {
+public class Ejercicio03 {
   public static void main(String[] args) {
      
-     int i = 320;
+     int i = 0;
      do {
        System.out.println(i);
-       i-=20;
-      } while (i >= 160);
+       i+=5;
+      } while (i <= 100);
     }
   }
