@@ -5,8 +5,8 @@ public class Ejercicio10 {
     double numeroIntroducido = 0;
     double suma = 0;
 
-    System.out.println("Introduzca números positivos por teclado para hacer su media.");
-    System.out.println("Cuando ya no quiera introducir mas numeros lo q tiene que hacer es introducir un número negativo:");
+    System.out.println("Introduzca números positivos por teclado y luego te dire cuantos números capicúa se han introducido.");
+    System.out.println("Cuando ya no quiera introducir más números lo que tiene que hacer es introducir un número negativo:");
 
     while (numeroIntroducido >= 0) {
       numeroIntroducido = Integer.parseInt(System.console().readLine());
