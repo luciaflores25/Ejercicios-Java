@@ -46,10 +46,10 @@ public class ArbolDeNavidad {
               caracter = "^";
               break;
             case 7: 
-              caracter = "O";
+              caracter = "o";
               break;
             case 8: 
-              caracter = "O";
+              caracter = "o";
               break;
             case 9: 
               caracter = "*";
@@ -86,10 +86,10 @@ public class ArbolDeNavidad {
               caracter = "^";
               break;
             case 7: 
-              caracter = "O";
+              caracter = "o";
               break;
             case 8: 
-              caracter = "O";
+              caracter = "o";
               break;
             case 9: 
               caracter = "*";
