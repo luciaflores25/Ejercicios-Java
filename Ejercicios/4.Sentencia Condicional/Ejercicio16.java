@@ -8,7 +8,7 @@ public class Ejercicio16 {
 	public static void main (String[] args) {
 		Scanner s = new Scanner (System.in);
 		
-	  int puntos = 0;
+		int puntos = 0;
 	  
       String respuesta;
       System.out.println("\nTEST DE INFIDELIDAD\n");
@@ -91,8 +91,7 @@ public class Ejercicio16 {
       
       if (puntos>22 && puntos<=30) {
         System.out.println("Puntuación entre 22 y 30: Tu pareja tiene todos los ingredientes para estar viviendo un romance con otra persona. Te aconsejamos que indagues un poco más y averigües que es lo que está pasando por su cabeza.");
-      }
-      
+}
 	}//Cierra el public static
 	
 }//Cierra el public class
