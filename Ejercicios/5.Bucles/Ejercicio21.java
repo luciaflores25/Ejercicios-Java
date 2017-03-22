@@ -1,41 +1,41 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 16 de marzo de 2017
+ * Fecha: 22 de marzo de 2017
  * Ejercicio 21 bucles
  * Programación
  */
-public class Ejercicio21 {
-	public static void main (String[] args) {
-	
-	System.out.println("Vamos a introducir varios números mayores o iguales a 0 (para detenerlo se introduce un número negativo");
-        
-    int numero;
-    int numerosIntroducidos = 0;
-    int sumaImpares = 0;
-    int cantidadImpares = 0;
-    int mayorPares = 0;
-    
-    do {
-      System.out.print("Introduzca un número: ");
-      numero = Integer.parseInt(System.console().readLine());
-      
-      numerosIntroducidos++;
-      
-      if (numero % 2 == 1) {
-        cantidadImpares++;
-        sumaImpares += numero;
+import java.util.Scanner;
+  public class Ejercicio21 {
+  public static void main (String[] args) {
+  Scanner s = new Scanner(System.in);
+  
+  int numeros = 0;
+  int mayorPares = 0;
+  int impares = 0;
+  int sumaImpares = 0;
+  int numeroIntroducido;
+  
+    do{
+      System.out.println("Ve introduciendo números enteros y cuando quieras parar introduce uno negativo: ");
+      numeroIntroducido = s.nextInt();
+
+        numeros++;
+
+        if (numeroIntroducido % 2 == 1) {
+        impares++;
+        sumaImpares += numeroIntroducido;
       } else {
-        if (numero > mayorPares) {
-          mayorPares = numero;
+        if (numeroIntroducido > mayorPares) {
+          mayorPares = numeroIntroducido;
         }
       }
-    } while (numero >= 0);
-    
-    double mediaImpares;
-    
-    System.out.println("Números introducidos: " + (numerosIntroducidos - 1));
-    System.out.println("Media de los impares: " + ((double)sumaImpares / (double)cantidadImpares));
-    System.out.println("Número par mayor: " + mayorPares);
-		
-	}//Cierra el public static
-	
+    } while (numeroIntroducido >= 0);
+
+    double media;
+
+    System.out.println("Se han introducido " + numeros + " numeros.");
+    System.out.println("La media de los números impares es " + ((double)sumaImpares / (double)impares));
+    System.out.println("El mayor número par es " + mayorPares);
+
+  }//Cierra el public static
+  
 }//Cierra el public class

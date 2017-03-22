@@ -1,43 +1,43 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 16 de marzo de 2017
+ * Fecha: 22 de marzo de 2017
  * Ejercicio 20 bucles
  * Programación
  */
-public class Ejercicio20 {
-	public static void main (String[] args) {
-	
-	System.out.println("Vamos a dibujar una pirámide\n");
+import java.util.Scanner;
+  public class Ejercicio20 {
+  public static void main (String[] args) {
+  Scanner s = new Scanner(System.in);
   
-    System.out.print("Introduzca la altura de la pirámide: ");
-    int alturaTotal = Integer.parseInt(System.console().readLine());
-    
-    System.out.print("Introduzca el carácter que se va a usar para dibujarla: ");
-    char caracter = (System.console().readLine()).charAt(0);
-    
-    System.out.print("\n");
-    
-    for (int nivelActual = 1; nivelActual <= alturaTotal; nivelActual++) {
-      
-      for (int espacios = 1; espacios <= alturaTotal - nivelActual; espacios++) {
+  System.out.println("Este programa va a pintar una pirámide hueca");
+  
+  System.out.print("Introduce la altura de la pirámide: ");
+  int alturaFinal = s.nextInt();
+
+  System.out.print("Ahora introduce el carácter con el que quieres que se pinte: ");
+  char caracter = (System.console().readLine()).charAt(0);
+
+  System.out.print("\n");
+
+  for(int altura = 1; altura <= alturaFinal; altura++){
+
+    for(int espacios = 1; espacios <= alturaFinal-altura; espacios++){
+      System.out.print(" ");
+    }
+
+    if(altura != 1){
+      System.out.print(caracter);
+    }
+
+    for(int carac = 1; carac < 2 * altura - 2; carac++){
+      if(altura != alturaFinal){
         System.out.print(" ");
-      }
-      
-       if (nivelActual != 1) {
+      }else{
         System.out.print(caracter);
       }
-      
-      for (int i = 1; i < 2 * nivelActual - 2; i++) {
-        
-        if (nivelActual != alturaTotal) {
-          System.out.print(" ");
-        } else {
-          System.out.print(caracter);
-        }
-      }
-        System.out.print(caracter + "\n");
-		
-		}
-		
-	}//Cierra el public static
-	
+    }
+    System.out.print(caracter + "\n");
+  }
+
+  }//Cierra el public static
+  
 }//Cierra el public class

@@ -3,31 +3,35 @@
  * Ejercicio 19 bucles
  * Programación
  */
-public class Ejercicio19 {
-	public static void main (String[] args) {
-		System.out.println("Vamos a dibujar una pirámide\n");
+import java.util.Scanner;
+  public class Ejercicio19 {
+  public static void main (String[] args) {
+  Scanner s = new Scanner(System.in);
   
-    System.out.print("Introduzca la altura de la pirámide: ");
-    int alturaTotal = Integer.parseInt(System.console().readLine());
-    
-    System.out.print("Introduzca el carácter que se va a usar para dibujarla: ");
-    char caracter = (System.console().readLine()).charAt(0);
-    
+  System.out.println("Este programa va a pintar una pirámide.");
+  
+  System.out.print("Introduce la altura de la pirámide: ");
+  int alturaFinal = s.nextInt();
+
+  System.out.print("Ahora introduce el carácter con el que quieres que se pinte: ");
+  char caracter = (System.console().readLine()).charAt(0);
+
+  System.out.print("\n");
+
+  for(int altura = 1; altura <= alturaFinal; altura++){
+
+    for(int espacios = 0; espacios <= alturaFinal-altura; espacios++){
+      System.out.print(" ");
+    }
+
+    for(int carac = 1; carac < 2 * altura; carac++){
+      System.out.print(caracter);
+    }
     System.out.print("\n");
-    
-    for (int nivelActual = 1; nivelActual <= alturaTotal; nivelActual++) {
-      
-      for (int espacios = 1; espacios <= alturaTotal - nivelActual; espacios++) {
-        System.out.print(" ");
-      }
-      
-      for (int caracteres = 1; caracteres < 2 * nivelActual; caracteres++) {
-        System.out.print(caracter);
-      }
-      
-      System.out.print("\n");
-		}
-		
-	}//Cierra el public static
-	
+  }
+  
+  
+  
+  }//Cierra el public static
+  
 }//Cierra el public class
