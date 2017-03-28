@@ -1,5 +1,5 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 20 de marzo de 2017
+ * Fecha: 28 de marzo de 2017
  * Ejercicio 28 bucles
  * Programación
  */
@@ -27,7 +27,7 @@ public class Ejercicio28 {
       }
 
       System.out.println("El factorial de " + numeroIntroducido + " es " + factorial);
-		}
-	}//Cierra el public static
-	
+    }
+  }//Cierra el public static
+  
 }//Cierra el public class

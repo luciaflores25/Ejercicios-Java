@@ -1,5 +1,5 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 19 de marzo de 2017
+ * Fecha: 27 de marzo de 2017
  * Ejercicio 27 bucles
  * Programación
  */
@@ -34,7 +34,7 @@ public class Ejercicio27 {
     System.out.println("La cantidad de números múltiplos de 3 que hay entre el 1");
     System.out.println("y el número introducido es: " + contador);
     System.out.println("Y la suma de los números da como resultado: " + suma);
-	
-	}//Cierra el public static
-	
+  
+  }//Cierra el public static
+
 }//Cierra el public class

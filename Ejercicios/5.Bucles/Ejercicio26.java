@@ -1,12 +1,12 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 17 de marzo de 2017
+ * Fecha: 27 de marzo de 2017
  * Ejercicio 26 bucles
  * Programación
  */
 public class Ejercicio26 {
-	public static void main (String[] args) {
-	
-	System.out.print("Introduzca un número entero: ");
+  public static void main (String[] args) {
+  
+    System.out.print("Introduzca un número entero: ");
     int numeroIntroducido = Integer.parseInt(System.console().readLine());
 
     System.out.print("Introduzca un dígito: ");
@@ -39,7 +39,7 @@ public class Ejercicio26 {
     }
 
     System.out.println();
-	
-	}//Cierra el public static
-	
+  
+  }//Cierra el public static
+  
 }//Cierra el public class
