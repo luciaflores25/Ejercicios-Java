@@ -1,12 +1,12 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 17 de marzo de 2017
+ * Fecha: 25 de marzo de 2017
  * Ejercicio 25 bucles
  * Programación
  */
 public class Ejercicio25 {
-	public static void main (String[] args) {
-	
-	System.out.print("Introduzca un número entero que tenga mínimo 2 dígitos: ");
+  public static void main (String[] args) {
+  
+    System.out.print("Introduzca un número entero que tenga mínimo 2 dígitos: ");
     int numeroIntroducido = Integer.parseInt(System.console().readLine());
 
     int numero = numeroIntroducido;
@@ -18,7 +18,7 @@ public class Ejercicio25 {
     }
     
     System.out.println("Si le damos la vuelta al número introducido: " + numeroIntroducido + ", aparecerá asi: " + volteado);
-	
-	}//Cierra el public static
-	
+  
+  }//Cierra el public static
+  
 }//Cierra el public class

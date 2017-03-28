@@ -1,12 +1,12 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 17 de marzo de 2017
+ * Fecha: 25 de marzo de 2017
  * Ejercicio 24 bucles
  * Programación
  */
 public class Ejercicio24 {
-	public static void main (String[] args) {
-	
-	System.out.println("Este programa pinta una pirámide hecha con números.");
+  public static void main (String[] args) {
+  
+  System.out.println("Este programa pinta una pirámide hecha con números.");
     System.out.println("----------------------------------------------------");
     System.out.print("Introduce la altura de la pirámide:");
     int alturaIntroducida = Integer.parseInt(System.console().readLine());
@@ -37,7 +37,7 @@ public class Ejercicio24 {
       espacios--;
       
       System.out.println();
-		}
-	}//Cierra el public static
-	
+    }
+  }//Cierra el public static
+  
 }//Cierra el public class

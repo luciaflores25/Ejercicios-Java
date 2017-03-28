@@ -1,28 +1,30 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 16 de marzo de 2017
+ * Fecha: 25 de marzo de 2017
  * Ejercicio 23 bucles
  * Programación
  */
 public class Ejercicio23 {
-	public static void main (String[] args) {
-	
-	System.out.println("En este programa van a aparecer todos los primos entre 2 y 100");
+  public static void main (String[] args) {
+  
+    System.out.println("Estos son todos los primos entre 2 y 100");
     
     boolean primo;
     
-    for (int numeroAComprobar = 2; numeroAComprobar <= 100; numeroAComprobar++) {
+    for (int numero = 2; numero <= 100; numero++) {
       primo = true;
       
-      for (int i = (int)Math.sqrt(numeroAComprobar); i >= 2; i--) {
+      for (int i = (int)Math.sqrt(numero); i >= 2; i--) {
         
-        if (numeroAComprobar % i == 0) {
+        if (numero % i == 0) {
         primo = false;
         }
       }
       
       if (primo) {
-          System.out.print(numeroAComprobar + ", ");
+          System.out.print(numero + ", ");
+      }
+    }
           
-	}//Cierra el public static
-	
+  }//Cierra el public static
+  
 }//Cierra el public class
