@@ -22,6 +22,6 @@ public class Ejercicio29 {
         
       }
     }
-	}//Cierra el public static
-	
+  }//Cierra el public static
+  
 }//Cierra el public class

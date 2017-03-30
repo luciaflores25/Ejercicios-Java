@@ -1,6 +1,6 @@
 /* Nombre: Lucía Flores Padilla
- * Fecha: 20 de marzo de 2017
- * Ejercicio 30 bucles
+ * Fecha: 25 de marzo de 2017
+ * Ejercicio 29 bucles
  * Programación
  */
 public class Ejercicio30 {
@@ -148,6 +148,5 @@ public class Ejercicio30 {
     System.out.print(" y las " + segundaHora + ":00h del " + nombreSegundoDia);
     System.out.println(" hay " + (((segundoDia * 24) + segundaHora) - ((primerDia * 24) + primeraHora)) + " horas.");
 
-	}//Cierra el public static
-	
-}//Cierra el public class
+  }
+}
