@@ -1,6 +1,6 @@
 /* Nombre: Lucía Flores Padilla
  * Fecha: 30 de marzo de 2017
- * Ejercicio 37 bucles
+ * Ejercicio 43 bucles
  * Programación
  */
 public class Ejercicio43{
