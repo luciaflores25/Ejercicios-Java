@@ -25,9 +25,15 @@ public class HolaMundo {
 }
 
 ```
-Puedes ejecutar el programa mediate el siguiente comando:
+Puedes compilar el programa mediate el siguiente comando:
 
 ```console
 javac HolaMundo.java
 
 ```
+
+Puedes ejecutar el programa mediate el siguiente comando:
+
+```console
+java HolaMundo
+
