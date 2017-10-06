@@ -36,7 +36,7 @@ Puedes ejecutar el programa mediate el comando `java`:
 
 ```console
 java HolaMundo
-
+```
 
 ## Qué se estudia en programación
 
