@@ -1,5 +1,15 @@
 # Ejercicios de Programación
 
+## Qué se estudia en programación
+
+ *Lenguaje Java
+ *Comandos Linux
+ *Git y Github
+
+## Bibliografía
+[Aprende Java con Ejercicios](http:/leanup.com/aprendejava)
+![portada](img/portada.png)
+
 Ejercicios de la asignatura **Programación** de **1º de DAW
 (Desarrollo de Aplicaciones Web)** en el IES Campanillas.
 
