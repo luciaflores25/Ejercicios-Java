@@ -3,7 +3,7 @@
 Ejercicios de la asignatura **Programación** de **1º de DAW
 (Desarrollo de Aplicaciones Web)** en el IES Campanillas.
 
-## Ejemplo de un programa en Java :coffee:
+## Ejemplo de un programa en Java
 
 A continuación se muestra el programa *"Hola Mundo"* en Java.
 
