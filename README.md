@@ -46,6 +46,6 @@ java HolaMundo
 
 ## Bibliografía
 
-<img src="img/portada.png" width="200 px"
+<img src="img/portada.png" width="200 px">
 
-[Aprende Java con Ejercicios](http://leanup.com/aprendejava)>
+[Aprende Java con Ejercicios](http://leanup.com/aprendejava)
