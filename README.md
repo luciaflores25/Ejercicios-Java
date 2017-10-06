@@ -1,9 +1,9 @@
-# Ejercicios de Programación
+# Ejercicios de Programación :computer:
 
 Ejercicios de la asignatura **Programación** de **1º de DAW
 (Desarrollo de Aplicaciones Web)** en el IES Campanillas.
 
-## Ejemplo de un programa en Java
+## Ejemplo de un programa en Java :coffee:
 
 A continuación se muestra el programa *"Hola Mundo"* en Java.
 
@@ -40,11 +40,11 @@ java HolaMundo
 
 ## Qué se estudia en programación
 
- * Lenguaje Java
- * Comandos Linux
- * Git y Github
+ * Lenguaje Java :coffee:
+ * Comandos Linux :penguin:
+ * Git y Github :octocat:
 
-## Bibliografía
+## Bibliografía :books:
 
 <img src="img/portada.png" width="200 px">
 
