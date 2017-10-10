@@ -4,6 +4,10 @@
  * Ejercicio 3
  * 3 de octubre de 2017
  * 
+ * Crea las variables nombre, direccion y telefono y asígnale los valores correspondientes.
+   Muestra los valores de esas variables por pantalla de tal forma
+   que el resultado del programa sea el mismo que en el ejercicio 2
+ * 
  * @author Lucía Flores Padilla
  */
 

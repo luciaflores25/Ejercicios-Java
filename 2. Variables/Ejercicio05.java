@@ -4,6 +4,9 @@
  * Ejercicio 5
  * 4 de octubre de 2017
  * 
+ * Realiza un conversor de pesetas a euros. La cantidad en pesetas que se quiere
+   convertir deberá estar almacenada en una variable
+ * 
  * @author Lucía Flores Padilla
  */
 
