@@ -4,6 +4,8 @@
  * Ejercicio 1
  * 29 de septiembre de 2017
  * 
+ * Escribe una programa que muestre tu nombre por pantalla
+ * 
  * @author Lucía Flores Padilla
  */
 

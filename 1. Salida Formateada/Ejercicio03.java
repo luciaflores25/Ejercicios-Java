@@ -4,6 +4,10 @@
  * Ejercicio 3
  * 29 de septiembre de 2017
  * 
+ * Escribe un programa que muestre por pantalla 10 palabras en inglés junto
+  a su correspondiente traducción al castellano. Las palabras deben estar
+  distribuidas en dos columnas y alineadas a la izquierda.
+ * 
  * @author Lucía Flores Padilla
  */
 

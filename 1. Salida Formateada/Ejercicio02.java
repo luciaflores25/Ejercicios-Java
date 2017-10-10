@@ -4,6 +4,10 @@
  * Ejercicio 2
  * 29 de septiembre de 2017
  * 
+ * Modifica el programa anterior para que además se muestre tu dirección y
+  tu número de teléfono. Asegúrate de que los datos se muestran en líneas
+  separadas.
+ * 
  * @author Lucía Flores Padilla
  */
 

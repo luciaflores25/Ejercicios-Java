@@ -4,6 +4,8 @@
  * Ejercicio 4
  * 2 de octubre de 2017
  * 
+ * Escribe un programa que muestre tu horario de clase
+ * 
  * @author Lucía Flores Padilla
  */
 

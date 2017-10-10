@@ -4,6 +4,9 @@
  * Ejercicio 5
  * 2 de octubre de 2017
  * 
+ * Modifica el programa anterior añadiendo colores. Puedes mostrar cada asignatura
+  de un color diferente
+ * 
  * @author Lucía Flores Padilla
  */
 
