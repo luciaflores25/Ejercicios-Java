@@ -103,6 +103,8 @@ public class Ejercicio10 {
           System.out.println("\nTu horóscopo es Capricornio");
         }
         break;
+      default:
+        System.out.println("\nLa fecha introducida no es correcta");
       }
   }
 }
