@@ -30,16 +30,14 @@ public class Ejercicio08 {
     
     if (media <  5){
       System.out.println(", la nota final es un insuficiente");
-    }else if ((media >= 5) && (media <6)){
+    }else if (media < 6){
       System.out.println(", la nota final es un suficiente");
-    }else if ((media >= 6) && (media <7)){
+    }else if (media <7){
       System.out.println(", la nota final es un bien");
-    }else if ((media >= 7) && (media <9)){
+    }else if (media <9){
       System.out.println(", la nota final es un notable");
-    }else if ((media >= 9) && (media <=10)){
-      System.out.println(", la nota final es un sobresaliente");
     }else{
-      System.out.println(", la media no es correcta");
+      System.out.println(", la nota final es un sobresaliente");
     }
   }
 }
