@@ -19,10 +19,14 @@ public class Ejercicio06 {
     System.out.print("Introduce la altura desde la que quieres qe caiga el objeto (m):  ");
     double h = Double.parseDouble(System.console().readLine());
     
-    double g = 9.81;
-    double t = Math.sqrt((2*h)/g);
     
-    System.out.printf("\nEl objeto desde " + h + " metros, tardará en caer %.2f segundos", t);
     
+    if (h > 0) {
+      final double g = 9.81;
+      double t = Math.sqrt((2*h)/g);
+      System.out.printf("\nEl objeto desde " + h + " metros, tardará en caer %.2f segundos", t);
+    } else {
+     System.out.println("La altura debe ser mayor que 0");
+    }
   }
 }

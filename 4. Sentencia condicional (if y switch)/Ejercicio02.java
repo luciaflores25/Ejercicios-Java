@@ -27,7 +27,7 @@ public class Ejercicio02 {
     else if (((hora > 20) && (hora <= 23)) || ((hora >= 0) && (hora < 6))) {
       System.out.println("¡Buenas noches!");
     }
-    else {
+    else if ((hora > 23) || (hora < 0)) {
       System.out.println("La hora introducida no existe");
     }
   }

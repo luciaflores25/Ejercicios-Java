@@ -22,5 +22,9 @@ public class Ejercicio05 {
     double ecuacion = (double)-b/a;
     
     System.out.println("El resultado de la ecuación es x = " + ecuacion);
+    
+    if (a == 0) {
+      System.out.println("La ecuación no se puede resolver, ya que x vale 0");
+    }
   }
 }
