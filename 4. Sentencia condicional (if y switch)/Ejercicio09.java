@@ -23,14 +23,15 @@ public class Ejercicio09 {
     System.out.print("Ahora introduce el valor de c = ");
     double c = Double.parseDouble(System.console().readLine());
     
-    double raiz = Math.sqrt((b*b)-(4*a*c));
+    double dentroRaiz = (b*b)-(4*a*c);
+    double raiz = Math.sqrt(dentroRaiz);
     
     double solucion1 = (-b+raiz)/(2*a);
     double solucion2 = (-b-raiz)/(2*a);
     
     if (a==0){
       System.out.println("La ecuación no tiene solución");
-    }else if (raiz<0){
+    }else if (dentroRaiz < 0){
       System.out.println("La ecuación no tiene solución");
     }
     
