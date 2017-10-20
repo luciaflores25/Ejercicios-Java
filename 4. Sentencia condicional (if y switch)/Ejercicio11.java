@@ -20,13 +20,14 @@ public class Ejercicio11 {
     System.out.print("Ahora introduce los minutos: ");
     int minutos = Integer.parseInt(System.console().readLine());
     
-    int segundos = (minutos * 60) + (hora * 3600);
-    int segundosEnUnDia = 86400;
-    int totalSegundos = segundosEnUnDia - segundos;
-    
-    System.out.println("Quedan " + totalSegundos + " segundos para la media noche.");
-    
-    
+    if ((hora > 0) && (hora < 24)){
+      int segundos = (minutos * 60) + (hora * 3600);
+      int segundosEnUnDia = 86400;
+      int totalSegundos = segundosEnUnDia - segundos;
+      System.out.println("Quedan " + totalSegundos + " segundos para la media noche.");
+    }else {
+      System.out.println("La hora que has introducido no es correcta");
+    }
     
   }
 }
