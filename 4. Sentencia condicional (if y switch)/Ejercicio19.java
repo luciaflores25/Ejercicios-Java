@@ -1,19 +1,19 @@
 /**
  * Programación
  * Tema 4 Senttencia condicional (if y switch)
- * Ejercicio 18
+ * Ejercicio 19
  * 22 de octubre de 2017
  * 
- * Escribe un programa que diga cuál es la primera cifra de un número entero
-   introducido por teclado. Se permiten números de hasta 5 cifras.
+ * Realiza un programa que nos diga cuántos dígitos tiene un número entero que
+   puede ser positivo o negativo. Se permiten números de hasta 5 dígitos.
  * 
  * @author Lucía Flores Padilla
  */
 
-public class Ejercicio18 {
+public class Ejercicio19 {
   public static void main(String[] args) {
     
-    System.out.print("Introduce un número entero (max 5 cifras) y te diré cuál es la primera cifra: ");
+    System.out.print("Introduce un número entero (max 5 cígitos) y te diré cuantos dígitos tiene: ");
     int numero = Integer.parseInt(System.console().readLine());
     
     int d1 = numero % 10;
@@ -23,15 +23,15 @@ public class Ejercicio18 {
     int d5 = numero % 100000 / 10000;
     
     if ((numero <=9) && (numero >=-9)) {
-      System.out.println("La primera cifra de " + numero + " es " + d1);
+      System.out.println("El número "+numero+" tiene 1 dígito");
     } else if ((numero <=99) && (numero >=-99)) {
-      System.out.println("La primera cifra de " + numero + " es " + d2);
+      System.out.println("El número "+numero+" tiene 2 dígitos");
     } else if ((numero <=999) && (numero >=-999)) {
-      System.out.println("La primera cifra de " + numero + " es " + d3);
+      System.out.println("El número "+numero+" tiene 3 dígitos");
     } else if ((numero <=9999) && (numero >=-9999)) {
-      System.out.println("La primera cifra de " + numero + " es " + d4);
+      System.out.println("El número "+numero+" tiene 4 dígitos");
     }else if ((numero <=99999) && (numero >=-99999)) {
-      System.out.println("La primera cifra de " + numero + " es " + d5);
+      System.out.println("El número "+numero+" tiene 5 dígito");
     }
   }
 }
