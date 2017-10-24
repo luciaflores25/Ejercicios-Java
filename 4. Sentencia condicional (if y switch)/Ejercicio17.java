@@ -14,9 +14,15 @@ public class Ejercicio17 {
   public static void main(String[] args) {
     
     System.out.print("Introduce un número entero (max 7 cifras) y te diré cuál es la última cifra: ");
-    int numero = Integer.parseInt(System.console().readLine());
+    int numero = /*Math.abs*/(Integer.parseInt(System.console().readLine()));
     
-    int ultimaCifra = numero % 10;
+    if (numero >0){
+      int ultimaCifra = numero % 10;
       System.out.println("La última cifra de " + numero + " es " + ultimaCifra);
+    }else if (numero < 0){
+      int ultimaCifra = numero % 10;
+      int negativo = ultimaCifra * -1;
+      System.out.println("La última cifra de " + numero + " es " + negativo);
+    }
   }
 }
