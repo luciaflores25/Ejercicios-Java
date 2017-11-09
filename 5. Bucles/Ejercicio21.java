@@ -1,7 +1,7 @@
 /**
  * Programación
  * Tema 5 Bucles
- * 5 de noviembre de 2017
+ * 9 de noviembre de 2017
  * Ejercicio 21
  * 
  * 21. Realiza un programa que vaya pidiendo números hasta que se introduzca un
@@ -15,31 +15,42 @@
  
 import java.util.Scanner;
 public class Ejercicio21 {
+  public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
     int numeros = 0;
     int contador = 0;
-    int suma = 0;
-    int pares = numeros / 2;
     int contadorPares = 0;
     int contadorImpares = 0;
+    int suma = 0;
+    int mayorPares = 0;
     
     System.out.print("Ve introduciendo numeros pulsando intro ");
     System.out.println("cuando quieras parar introduce un numero negativo: ");
     
     while (numeros >= 0){
       numeros = Integer.parseInt(s.nextLine());
-      if (pares == 0){
+      int pares = numeros % 2;
+      if ((pares == 0) && (numeros > 0)){
+        
         contadorPares++;
-      }else if (pares != 0){
+      }
+      if ((pares != 0) && (numeros > 0)){
+        suma += numeros;
         contadorImpares++;
       }
+      if (numeros > mayorPares){
+        mayorPares = numeros;
+      }
+      
       contador++;
-      suma += numeros;
     }
     int cuentaNumeros = contador -1;
-     System.out.println("Se han introducido " + cuentaNumeros + " numeros");
+    int mediaImpares = suma / contadorImpares;
+     System.out.println("\nSe han introducido " + cuentaNumeros + " numeros");
      System.out.println("Se han introducido " + contadorPares + " numeros pares");
-     System.out.println("Se han introducido " + contadorImpares + " numeros impares");
+     System.out.println("Se han introducido " + contadorImpares + " numeros impares\n");
+     System.out.println("La media de los impares es " + mediaImpares );
+     System.out.println("El mayor de los pares es " + mayorPares );
   }
 }
