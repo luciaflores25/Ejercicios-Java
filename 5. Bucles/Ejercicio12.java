@@ -15,13 +15,27 @@
  */
  
 import java.util.Scanner;
-public class Ejercicio21 {
+public class Ejercicio12 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    System.out.print("Ve introduciendo numeros pulsando intro ");
-    System.out.println("cuando quieras parar introduce un numero negativo: ");
-    numeros = Integer.parseInt(s.nextLine());
- 
+    int n1 = 0;
+    int n2 = 1;
+    int aux;
+    int contador = 0;
+    
+    System.out.print("Introduce el numero de terminos de la serie de Fibonacci ");
+    System.out.print("que quieres que se muestren: ");
+    int n = Integer.parseInt(s.nextLine());
+    
+    System.out.println("0\n" + "1");
+    n = n -3;
+    while (contador <= n){
+      aux = n1; //aux = 0
+      n1 = n2; //n1 = 1
+      n2 = aux + n1; //n2 = 1
+      System.out.println(n2);
+      contador++;
+    }
   }
 }
