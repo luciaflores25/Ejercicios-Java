@@ -22,7 +22,7 @@ public class Ejercicio09 {
     nuevoNum=numeroIntroducido;
     
     do {
-      nuevoNum /= 10;
+      nuevoNum = nuevoNum / 10;
       digitos++;
       System.out.println(nuevoNum);
     }while (nuevoNum > 10);
