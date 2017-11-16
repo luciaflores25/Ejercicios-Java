@@ -19,7 +19,6 @@ public class ExamenDamEj04 {
     System.out.println("Introduzca un número entero (mayor que cero): ");
     int numeroIntroducido = Integer.parseInt(s.nextLine());
     int numeroNuevo = 0;
-    int ayudaParaVolverAvoltear = 0;
     boolean aComido = false;
     int volteado = 0;
     
