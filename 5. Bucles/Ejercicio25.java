@@ -1,7 +1,7 @@
 /**
  * Programación
  * Tema 5 Bucles
- * 9 de noviembre de 2017
+ * 20 de noviembre de 2017
  * Ejercicio 25
  * 
  * 25. Realiza un programa que pida un número por teclado y que luego muestre ese
@@ -16,16 +16,16 @@ public class Ejercicio25 {
     Scanner s = new Scanner(System.in);
     
     System.out.println("Introduce un número y te diré cuantos dígitos tiene: ");
-    int n = Integer.parseInt(s.nextLine());
+    int numero = Integer.parseInt(s.nextLine());
     
-    int volteado;
-    int nuevoNum = 0;
+    int volteado = 0;
+    int nuevoNum = numero;
     
-    while (n > 0){
-      volteado = n % 10;
-      volteado = n / 10;
-      nuevoNum = n * 10;
+    while (nuevoNum > 0) {
+      volteado = (volteado * 10) + (nuevoNum % 10);
+      nuevoNum /= 10;
     }
-    System.out.println(nuevoNum);
+
+    System.out.println("El número " + numero + " al revés es " + volteado);
   }
 }
