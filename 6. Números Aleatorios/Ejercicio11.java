@@ -46,7 +46,6 @@ public class Ejercicio11 {
           System.out.println("sobresaliente");
           sobresaliente++;
           break;
-          default:
       }
     }//cierra el for
     System.out.println();
