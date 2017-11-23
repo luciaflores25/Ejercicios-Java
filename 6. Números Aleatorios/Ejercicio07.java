@@ -23,13 +23,13 @@ public class Ejercicio07 {
         apuesta = (int)(Math.random()*3);
         switch(apuesta) {
           case 0:
-            apuestaSacada = String.valueOf("1");
+            apuestaSacada = String.valueOf("1  |");
             break;
           case 1:
-            apuestaSacada = "x";
+            apuestaSacada = " x |";
             break;
           case 2:
-            apuestaSacada = String.valueOf("2"); 
+            apuestaSacada = String.valueOf("  2|"); 
             break;
             default:
         }
@@ -40,13 +40,13 @@ public class Ejercicio07 {
     apuesta = (int)(Math.random()*3);
     switch(apuesta) {
       case 0:
-        apuestaSacada = String.valueOf("1");
+        apuestaSacada = String.valueOf("1  |");
         break;
       case 1:
-        apuestaSacada = "x";
+        apuestaSacada = " x |";
         break;
       case 2:
-        apuestaSacada = String.valueOf("2"); 
+        apuestaSacada = String.valueOf("  2|"); 
         break;
         default:
     }
