@@ -24,7 +24,7 @@ public class Ejercicio29 {
     
     for (int i = 0; i < n; i++) {
       if ((i % numeroPeque) != 0) {
-        System.out.print(i + "  ");
+        System.out.print(i + "  helllllllllo");
       }
     }
   }
