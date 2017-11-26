@@ -17,34 +17,24 @@ public class Ejercicio19 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    System.out.println("Este programa pinta una pirámide");
-    System.out.print("Introduce la altura: ");
-    int altura = Integer.parseInt(s.nextLine());
+    System.out.println("Introduce una altura para pintar una pirámide rellena: ");
+    int alturaIntroducida = Integer.parseInt(s.nextLine());
     
-    System.out.print("Introduzca el carácter con el que quieres pintar la pirámide: ");
-    String caracter = s.nextLine();
+    int altura = 1;
+    int espacios = alturaIntroducida -1;
+    int asteriscos = 1;
     
-    int espacios = altura -1;
-    int altura2 = 1;
-    int i;
-    
-    while (altura2 <= altura){
-      do{
-        i = 1;
+    while(altura <= alturaIntroducida){
+      for(int i = 1; i <= espacios; i++){
         System.out.print(" ");
-        i++;
-      }while (i <= espacios);
-      
-      do{
-        i = 1;
-        System.out.print(caracter);
-        i++;
-      }while (i < altura2);
-        
+      }
+      for(int i = 1; i <= asteriscos; i++){
+        System.out.print("*");
+      }
+      altura ++;
       System.out.println();
-
-      altura2++;
       espacios--;
+      asteriscos +=2;
     }
   }
 }
