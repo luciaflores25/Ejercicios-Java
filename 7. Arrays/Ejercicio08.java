@@ -30,7 +30,7 @@ public class Ejercicio08 {
     for (int i = 0; i < 12; i++) {
       System.out.printf("%10s ", meses[i]);
       for (int j = 0; j < temperaturas[i]; j++) {
-        System.out.print("*");
+        System.out.print("░");
       }
       System.out.println(" " + temperaturas[i] + "ºC ");
     }

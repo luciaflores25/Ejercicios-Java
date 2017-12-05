@@ -23,42 +23,47 @@ public class Ejercicio11 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    int[] original = new int[20];
-    int[] pares = new int[20];
-    int[] impares = new int[20];
-    int contadorPares = 0;
-    int contadorImpares = 0;
-    int aux = 0;
+    int[] inicial = new int [10];
     int i = 0;
+    int[] primos = new int[10];
+    int noPrimos = inicial.length-1;//para empezar el array desde el final
+    int contadorPrimos = 0;
+    int contadorNoPrimos = 0;
+    boolean esPrimo = true;
     
-    System.out.print("                    Array Original\n");
+    System.out.println("Introduce 10 números (enteros): ");
+    for(i = 0; i <= 9; i++){
+      inicial[i] = Integer.parseInt(s.nextLine());
+    }
     
-    for(i = 0; i <= 19; i++){//lee por teclado los datos del array
-      original[i] = (int)(Math.random()*101);
-      System.out.print(original[i] + " ");
-      
-      if(original[i] % 2 == 0){
-        pares[i] = original[i];
-        contadorPares++;
+    for(i = 0; i <= 9; i++){
+      int comprobacion = 0;
+      esPrimo = true;
+      for(int j = 2; j < inicial[i]; j++){
+        comprobacion = inicial[i] % j;
+        
+        if(comprobacion == 0){
+          esPrimo = false;
+        }
+      }
+      if(esPrimo){
+        primos[contadorPrimos] = inicial[i];
+        contadorPrimos++;
       }else{
-        impares[i] = original[i];
-        contadorImpares++;
+        primos[noPrimos] = inicial[i];
+        noPrimos--;
       }
     }
-    System.out.println("ContPares: " + contadorPares);
-    System.out.println("ContImpares: " + contadorImpares);
-    System.out.println();
-    System.out.print("\n                 Array de pares primero\n");
     
-    for(i = 0; i <= 19; i++){
-      if (pares[i] != 0){
-        System.out.print(pares[i] + " ");
-      }
+    System.out.println("\nArray inicial: ");
+    for(i = 0; i <= 9; i++){
+      System.out.print(inicial[i] + "  ");
     }
-    for(i = 0; i <= 19; i++){
-      if (impares[i] != 0){
-        System.out.print(impares[i] + " ");
-      }
+    
+    System.out.println("\nArray inicial: ");
+    for(i = 0; i <= 9; i++){
+      System.out.print(primos[i] + "  ");
     }
+    
   }
 }
