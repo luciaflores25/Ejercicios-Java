@@ -22,7 +22,7 @@ public class Ejercicio06 {
     int[] array2 = new int[15];
     int aux = 0;
    
-    System.out.println("Introduce 15 números ouhj (enteros) pulsando intro\n");
+    System.out.println("Introduce 15 números (enteros) pulsando intro\n");
     
     for(int i = 0; i <= 14; i++){//lee por teclado los datos del array
       array[i] = Integer.parseInt(s.nextLine());
