@@ -18,7 +18,6 @@ public class Ejercicio06 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    int num = 0;
     int[] array = new int[15];
     int[] array2 = new int[15];
     int aux = 0;
@@ -26,11 +25,11 @@ public class Ejercicio06 {
     System.out.println("Introduce 15 números (enteros) pulsando intro\n");
     
     for(int i = 0; i <= 14; i++){//lee por teclado los datos del array
-      num = Integer.parseInt(s.nextLine());
-      array[i] = num;
+      array[i] = Integer.parseInt(s.nextLine());
     }
     aux = array[14]; 
     for(int i = 0; i <= 14; i++){
+      //aqui se imprime el array original
       System.out.print("[" + i + "]" + " = " + array[i] + "\n");
     }
   
