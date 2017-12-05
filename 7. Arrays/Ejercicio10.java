@@ -24,10 +24,11 @@ public class Ejercicio10 {
     int contadorPares = 0;
     int contadorImpares = 0;
     int aux = 0;
+    int i = 0;
     
     System.out.print("                    Array Original\n");
     
-    for(int i = 0; i <= 19; i++){//lee por teclado los datos del array
+    for(i = 0; i <= 19; i++){//lee por teclado los datos del array
       original[i] = (int)(Math.random()*101);
       System.out.print(original[i] + " ");
       
@@ -39,13 +40,20 @@ public class Ejercicio10 {
         contadorImpares++;
       }
     }
-    
+    System.out.println("ContPares: " + contadorPares);
+    System.out.println("ContImpares: " + contadorImpares);
     System.out.println();
     System.out.print("\n                 Array de pares primero\n");
     
-    for(int i = 0; i <= 19; i++){
-      System.out.print(pares[i] + " ");
-      System.out.print(impares[i] + " ");
+    for(i = 0; i <= 19; i++){
+      if (pares[i] != 0){
+        System.out.print(pares[i] + " ");
+      }
+    }
+    for(i = 0; i <= 19; i++){
+      if (impares[i] != 0){
+        System.out.print(impares[i] + " ");
+      }
     }
   }
 }
