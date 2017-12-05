@@ -40,14 +40,16 @@ public class Ejercicio01 {
         }
       }
       if(esPrimo){
-          primos[i] = numero;
+          primos[cuentaPrimos] = numero;
           cuentaPrimos++;
       }
     }
     System.out.println("\n\nCuenta Primos: " + cuentaPrimos);
     System.out.println();
-    for(int k = 0; k <= cuentaPrimos; k++){
-      System.out.println("Números primos: " + primos[k] + " ");
+    System.out.print("Números primos: ");
+    for(int k = 0; k < cuentaPrimos; k++){
+      System.out.print(primos[k] + " ");
     }
+    
   }
 }
