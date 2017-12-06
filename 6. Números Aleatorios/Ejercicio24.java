@@ -35,11 +35,11 @@ public class Ejercicio24 {
       n /= 10;
       contador++;
     }
-    int posicion = (int) (Math.random() * contador) + 1;
+    int aleatorio = (int) (Math.random() * contador) + 1;
     
-    while (posicion > 1) {
+    while (aleatorio > 1) {
       numero /= 10;
-      posicion--;
+      aleatorio--;
     }
     System.out.println("La cifra aleatoria es: " + numero % 10);
   }

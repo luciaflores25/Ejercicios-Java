@@ -34,11 +34,10 @@ public class Ejercicio11 {
     System.out.println("Introduce 10 números (enteros): ");
     for(i = 0; i <= 9; i++){
       inicial[i] = Integer.parseInt(s.nextLine());
-    }
-    
-    for(i = 0; i <= 9; i++){
+      
       int comprobacion = 0;
       esPrimo = true;
+      
       for(int j = 2; j < inicial[i]; j++){
         comprobacion = inicial[i] % j;
         
@@ -46,9 +45,11 @@ public class Ejercicio11 {
           esPrimo = false;
         }
       }
+      
       if(esPrimo){
         primos[contadorPrimos] = inicial[i];
         contadorPrimos++;
+        
       }else{
         primos[noPrimos] = inicial[i];
         noPrimos--;
@@ -64,6 +65,5 @@ public class Ejercicio11 {
     for(i = 0; i <= 9; i++){
       System.out.print(primos[i] + "  ");
     }
-    
   }
 }
