@@ -26,7 +26,7 @@ public class Ejercicio11 {
     int[] inicial = new int [10];
     int i = 0;
     int[] primos = new int[10];
-    int noPrimos = inicial.length-1;//para empezar el array desde el final
+    int[] noPrimos = new int[10];
     int contadorPrimos = 0;
     int contadorNoPrimos = 0;
     boolean esPrimo = true;
@@ -51,8 +51,8 @@ public class Ejercicio11 {
         contadorPrimos++;
         
       }else{
-        primos[noPrimos] = inicial[i];
-        noPrimos--;
+        noPrimos[contadorNoPrimos] = inicial[i];
+        contadorNoPrimos++;
       }
     }
     
@@ -61,9 +61,16 @@ public class Ejercicio11 {
       System.out.print(inicial[i] + "  ");
     }
     
-    System.out.println("\nArray inicial: ");
+    System.out.println("\n\nArray de primos primero: ");
     for(i = 0; i <= 9; i++){
-      System.out.print(primos[i] + "  ");
+      if (primos[i] != 0){
+        System.out.print(primos[i] + "  ");
+      }
+    }
+    for(i = 0; i <= 9; i++){
+      if (noPrimos[i] != 0){
+        System.out.print(noPrimos[i] + "  ");
+      }
     }
   }
 }
