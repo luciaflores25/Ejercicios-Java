@@ -35,22 +35,119 @@ public class Ex14lfp04 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    System.out.print("Introduce la longitud del sendero: ");
-    System.out.println("\n");
-    int longitud = Integer.parseInt(s.nextLine());
-    int espacios = 1;
+    int espacios = 2;
+    int dentroDeCamino = 4;
+    int direccion = 0;
+    boolean obstaculo;
+    int porcentaje;
+    int posicionObstaculo;
+    int tipoObstaculo;
     
-    System.out.println();
-    while (longitud >= 1) {
-      espacios += (int)(Math.random() * 3) - 1;
-      
-      for (int i = 1; i < espacios; i++) {
+    System.out.println("Seleccione la longitud en metros: ");
+    int longitud = Integer.parseInt(System.console().readLine());
+    
+    for (int e = 0; e < longitud; e++) {
+      porcentaje = (int)(Math.random() * 2);
+      for (int i = 0; i < espacios; i++) {
         System.out.print(" ");
       }
-
-      System.out.println("#    #");
-
-      longitud--;
+      switch (porcentaje) {
+        case 0:
+          System.out.print("#");
+          for (int i = 0; i < dentroDeCamino; i++) {
+            System.out.print(" ");
+          }
+          System.out.print("#");
+          System.out.println();
+      
+          direccion = (int)(Math.random() * 3);
+          switch (direccion) {
+            case 0:
+              espacios--;
+              break;
+            case 1:
+              espacios = espacios;
+              break;
+            case 2:
+              espacios++;
+              break;
+          }
+          break;
+        case 1: 
+          posicionObstaculo = (int)(Math.random() * 4);
+          tipoObstaculo = (int)(Math.random() * 2);
+          switch (tipoObstaculo) {
+            case 0:
+              obstaculo = false;
+              System.out.print("#");
+              for (int i = 0; i < dentroDeCamino; i++) {
+                if (obstaculo == false) {
+                  if (i == posicionObstaculo) {
+                    System.out.print("*");
+                    obstaculo = true;
+                  }else {
+                    System.out.print(" ");
+                  } 
+                }else {
+                  System.out.print(" ");
+                }
+              }
+                
+            System.out.print("#");
+            System.out.println();
+      
+            direccion = (int)(Math.random() * 3);
+      
+            switch (direccion) {
+              case 0:
+                espacios--;
+                break;
+              case 1:
+                espacios = espacios;
+                break;
+              case 2:
+                espacios++;
+                break;
+            }
+              break;
+            case 1:
+          
+              obstaculo = false;
+              System.out.print("#");
+    
+              for (int i = 0; i < dentroDeCamino; i++) {
+                  
+                if (obstaculo == false) {
+            
+                    if (i == posicionObstaculo) {
+                      System.out.print("O");
+                      obstaculo = true;
+                    } else {
+                      System.out.print(" ");
+                    } 
+                  } else {
+                    System.out.print(" ");
+                  }
+                }
+                
+            System.out.print("#");
+            System.out.println();
+      
+            direccion = (int)(Math.random() * 3);
+            switch (direccion) {
+              case 0:
+                espacios--;
+                break;
+              case 1:
+                espacios = espacios;
+                break;
+              case 2:
+                espacios++;
+                break;
+            }
+              break;
+          }
+      }
     }
   }
 }
