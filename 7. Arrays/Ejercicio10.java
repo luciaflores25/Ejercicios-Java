@@ -21,8 +21,6 @@ public class Ejercicio10 {
     int[] original = new int[20];
     int[] pares = new int[20];
     int[] impares = new int[20];
-    int contadorPares = 0;
-    int contadorImpares = 0;
     int aux = 0;
     int i = 0;
     
@@ -30,14 +28,12 @@ public class Ejercicio10 {
     
     for(i = 0; i <= 19; i++){//lee por teclado los datos del array
       original[i] = (int)(Math.random()*101);
-      System.out.print(original[i] + " ");
+      
       
       if(original[i] % 2 == 0){
         pares[i] = original[i];
-        contadorPares++;
       }else{
         impares[i] = original[i];
-        contadorImpares++;
       }
     }
     System.out.println();
