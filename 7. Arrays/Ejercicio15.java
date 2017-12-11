@@ -29,7 +29,7 @@ public class Ejercicio15 {
     Scanner s = new Scanner(System.in);
     
     int[] mesas = new int[10];
-    int clientes = 0;
+    int clientes = 1;
     
     //Primero se rellenan las 10 mesas con numeros aleatorios entre 0-4
     for(int i = 0; i < mesas.length; i++){
@@ -37,12 +37,27 @@ public class Ejercicio15 {
     }
     
     while(clientes != -1){
-      for (int i = 0; i < 10; i++) {
-        System.out.print(mesas[i] + "  ");
+      
+      if((clientes > 0) && (clientes <= 4)){
+        
+        System.out.print("Mesa nº:  ");
+        for (int i = 0; i < 10; i++) {
+          System.out.printf(" %-2d", i+1);
+        }
+      
+        System.out.print("\nOcupación: ");
+        for (int i = 0; i < 10; i++) {
+          System.out.printf("%-2d ", mesas[i]);
+        }
       }
       
-      System.out.print("\n¿Cuántos son? (Introduzca -1 para salir del programa): ");
+      System.out.print("\n\n¿Cuántos son? (Introduzca -1 para salir del programa): ");
       clientes = Integer.parseInt(System.console().readLine());
+      
+      if((clientes > 4) || (clientes <= 0)){
+        System.out.print("\nLo siento, no admitimos grupos de " + clientes);
+        System.out.print("\nhaga grupos de 4 personas como máximo e intente de nuevo\n");
+      }
     }
   }
 }
