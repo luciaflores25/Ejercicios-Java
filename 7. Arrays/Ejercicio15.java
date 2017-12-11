@@ -1,16 +1,23 @@
 /**
  * Programación
  * Tema 7 Arrays
- * 10 de diciembre de 2017
- * Ejercicio 12
+ * 11 de diciembre de 2017
+ * Ejercicio 15
  * 
-* 12.   Realiza un programa que pida 10 números por teclado y que los almacene en
-        un array. A continuación se mostrará el contenido de ese array junto al índice
-        (0 – 9). Seguidamente el programa pedirá dos posiciones a las que llamaremos
-        “inicial” y “final”. Se debe comprobar que inicial es menor que final y que
-        ambos números están entre 0 y 9. El programa deberá colocar el número de
-        la posición inicial en la posición final, rotando el resto de números para que no
-        se pierda ninguno. Al final se debe mostrar el array resultante.
+* 15.   Un restaurante nos ha encargado una aplicación para colocar a los clientes en
+        sus mesas. En una mesa se pueden sentar de 0 (mesa vacía) a 4 comensales
+        (mesa llena). Cuando llega un cliente se le pregunta cuántos son. De momento
+        el programa no está preparado para colocar a grupos mayores a 4, por tanto,
+        si un cliente dice por ejemplo que son un grupo de 6, el programa dará el
+        mensaje “Lo siento, no admitimos grupos de 6, haga grupos de 4
+        personas como máximo e intente de nuevo”. Para el grupo que llega,
+        se busca siempre la primera mesa libre (con 0 personas). Si no quedan mesas
+        libres, se busca donde haya un hueco para todo el grupo, por ejemplo si el
+        grupo es de dos personas, se podrá colocar donde haya una o dos personas.
+        Inicialmente, las mesas se cargan con valores aleatorios entre 0 y 4. Cada
+        vez que se sientan nuevos clientes se debe mostrar el estado de las mesas.
+        Los grupos no se pueden romper aunque haya huecos sueltos suficientes. El
+        funcionamiento del programa se ilustra a continuación:
        
  *  
  * @author Lucía Flores Padilla
@@ -21,55 +28,21 @@ public class Ejercicio15 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
-    int[] original = new int[10];
-    int[] resultado = new int[10];
-    int posicionInicial = 0;
-    int posicionFinal = 0;
-    boolean datosCorrectos = false;
+    int[] mesas = new int[10];
+    int clientes = 0;
     
-    System.out.println("Introduce 10 números para meterlos en un array: ");
-    for(int i = 0; i < original.length; i++){
-      original[i] = Integer.parseInt(s.nextLine());
+    //Primero se rellenan las 10 mesas con numeros aleatorios entre 0-4
+    for(int i = 0; i < mesas.length; i++){
+      mesas[i] = (int)(Math.random() * 5);
     }
     
-    System.out.println("\n\nArray original"); 
-    //System.out.printf("%6.d")
-    for(int i = 0; i < original.length; i++){
-      System.out.print(original[i] + "  ");
-    }
-    
-    while(!datosCorrectos){
-      System.out.println("\n\nIntroduce la posición Inicial: ");
-      posicionInicial = Integer.parseInt(s.nextLine());
-      
-      System.out.println("\nIntroduce la posición final: ");
-      posicionFinal = Integer.parseInt(s.nextLine());
-      
-      if((posicionInicial < posicionFinal) && (posicionInicial >= 0) && (posicionFinal < 10)){
-        datosCorrectos = true;
-        System.out.print("\n\nLos datos que has introducido son incorrectos, " );
-        System.out.print("vuelve a introducirlos de nuevo...");
+    while(clientes != -1){
+      for (int i = 0; i < 10; i++) {
+        System.out.print(mesas[i] + "  ");
       }
-        
+      
+      System.out.print("\n¿Cuántos son? (Introduzca -1 para salir del programa): ");
+      clientes = Integer.parseInt(System.console().readLine());
     }
-    
-    for(int i = posicionFinal+1; i < original.length; i++){
-      resultado[i] = original[i-1];
-    }
-    
-    for(int i = 0; i < posicionInicial; i++){
-      resultado[i] = original[i+1];
-    }
-    
-    resultado[posicionFinal] = original[posicionInicial];
-    
   }
 }
-
-
-
-
-
-
-
-
