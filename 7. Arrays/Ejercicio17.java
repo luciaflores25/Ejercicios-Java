@@ -63,11 +63,8 @@ public class Ejercicio17 {
       
       for (i = 9; i > 0; i--) {
         array[i] = array[i - 1]; 
-        System.out.print(array[i] + " "); 
       }
-      System.out.println();
       array[0] = aux;
-      
     }
     
     //Aquí se muestra el array resultado
