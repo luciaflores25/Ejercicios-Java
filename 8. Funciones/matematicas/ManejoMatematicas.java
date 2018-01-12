@@ -11,58 +11,55 @@
  
 package matematicas;
  
- public class ManejoMatematicas{
+public class ManejoMatematicas{
    
-   ///////////////  EJERCICIO 1 /////////////////
+  ///////////////  EJERCICIO 1 /////////////////
    
-   /**
-    * Comprueba si un número es Capicúa o no
-    * @param n es el número introducido por el usuario
-    * @return <code>true</code> si el número introducido es capicúa 
-    * @return <code>false</code> si el número introducido no es capicúa
-    */
-    public static boolean esCapicua(int n) {
-      
-      int aux = n;
-      int volteado = 0;
-      
-      while (aux > 0) {
-        volteado = volteado * 10 + aux % 10;
-        aux /= 10;
-      }
-      
-      return (n == volteado);
+  /**
+   * Comprueba si un número es Capicúa o no
+   * @param n es el número introducido por el usuario
+   * @return <code>true</code> si el número introducido es capicúa 
+   * @return <code>false</code> si el número introducido no es capicúa
+   */
+  public static boolean esCapicua(int n) {
+    int aux = n;
+    int volteado = 0;
+    
+    while (aux > 0) {
+      volteado = volteado * 10 + aux % 10;
+      aux /= 10;
     }
+    
+    return (n == volteado);
+  }
     
     ///////////////  EJERCICIO 1 (FORMA SIMPLIFICADA) /////////////////
    
-   /**
-    * Comprueba si un número es Capicúa o no
-    * @param n es el número introducido por el usuario
-    * @return <code>true</code> si el número introducido es capicúa 
-    * @return <code>false</code> si el número introducido no es capicúa
-    */
-    public static boolean esCapicua2(int n) {
-      
-      return n == voltea(n);
-    }
+  /**
+   * Comprueba si un número es Capicúa o no
+   * @param n es el número introducido por el usuario
+   * @return comprueba si es Capicúa
+   */
+  public static boolean esCapicua2(int n) {
+    return n == voltea(n);
+  }
     
     ///////////////  EJERCICIO 2 /////////////////
     
   /**
-   * Comprueba si un número es primo o no
-   * @param n es el número introducido por el usuario
-   * @return <code>true</code> si el número introducido es primo
-   * @return <code>false</code> si el número introducido no es primo
-   */
-   public static boolean esPrimo(int n){
-     for(int i = 2; i < n; i++){
-       if((n % i) == 0){
-         return false;
-       }
-     }
-     return true;
-   }
+  * Comprueba si un número es primo o no
+  * @param n es el número introducido por el usuario
+  * @return <code>true</code> si el número introducido es primo
+  * @return <code>false</code> si el número introducido no es primo
+  */
+  public static boolean esPrimo(int n){
+    for(int i = 2; i < n; i++){
+      if((n % i) == 0){
+        return false;
+      }
+    }
+    return true;
+  }
    
    ///////////////  EJERCICIO 3 /////////////////
    
@@ -200,9 +197,9 @@ package matematicas;
            contador++;
          }
        }while((n > 0) && (contador != x));
+       
+       return n;
      }
-   
-   
    
  }
  
