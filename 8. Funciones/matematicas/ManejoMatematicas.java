@@ -12,6 +12,8 @@
  
  public class ManejoMatematicas{
    
+   ///////////////  EJERCICIO 1 /////////////////
+   
    /**
     * Comprueba si un número es Capicúa o no
     * @param n es el número introducido por el usuario
@@ -31,6 +33,8 @@
       return (n == volteado);
     }
     
+    ///////////////  EJERCICIO 2 /////////////////
+    
   /**
    * Comprueba si un número es primo o no
    * @param n es el número introducido por el usuario
@@ -46,6 +50,8 @@
      return true;
    }
    
+   ///////////////  EJERCICIO 3 /////////////////
+   
    /**
     * Devuelve el siguiente número primo al número que se ha introducido
     * @param n es el número introducido
@@ -59,6 +65,8 @@
       }while(!esPrimo(nextPrimo));
       return nextPrimo;
     } 
+    
+    ///////////////  EJERCICIO 4 /////////////////
     
   /**
    * Dada la base y un exponente devuelve una potencia
@@ -75,6 +83,8 @@
      
      return potencia;
    }
+   
+   ///////////////  EJERCICIO 5 /////////////////
    
    /**
     * Cuenta el número de dígitos de un número entero
@@ -94,6 +104,7 @@
       }
     }
   
+  ///////////////  EJERCICIO 6 /////////////////
   
   /**
    * Voltea un número introducido por teclado
@@ -111,8 +122,33 @@
      return volteado;
    }
    
+   ///////////////  EJERCICIO 7 /////////////////
+   
    /**
+    * Devuelve el dígito que está en la posición n de un número entero. 
+    * Se empieza contando por el 0 y de izquierda a derecha.
+    * @param n es el número entero introducido por teclado
+    * @param x es la posición que hay que buscar en el número introduido anteriormente.
+    * @return <code>digito</code> es la posición del digito
     */
+    public static int digitoN(int n, int x){
+      int aux = voltea(n);
+      
+      if (x == 1){
+        return aux % 10;
+      }else{
+        for(int i = 1; i <= x; i++){
+          aux = aux / 10;
+        }
+        
+        return aux % 10;
+      }
+    }
+    
+    ///////////////  EJERCICIO 8 /////////////////
+    
+    /**
+     */
    
  }
  
