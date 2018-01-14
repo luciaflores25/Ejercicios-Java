@@ -191,15 +191,65 @@ public class ManejoMatematicas{
      public static long quitarPorDetras(long n, long x) {
        int contador = 0;
        
-       do{
-         while (contador < x) {
-           x /= 10;
-           contador++;
-         }
-       }while((n > 0) && (contador != x));
-       
+       while(contador < x){
+         n = n/10;
+         contador++;
+       }
        return n;
      }
-   
+     
+     ///////////////  EJERCICIO 10 /////////////////
+     
+  /**
+    * Le quita a un número n dígitos por delante (por la izquierda).
+    * @param n es el número entero (long) introducido por el usuario.
+    * @param x es el número entero que se introduce para saber la cantidad de 
+    * números que se le va a quitar al introducido desde la izquierda.
+    * @return es el número introducido ya acortado
+    */
+    public static int quitarPorDelante(int n, int x) {
+      n = voltea(n);
+      int contador = 0;
+
+      while(contador < x){
+        
+        n = n/10;
+        contador++;
+      }
+      n = voltea(n);
+      return n;
+    }
+     
+     ///////////////  EJERCICIO 11 /////////////////
+     
+  /**
+   * Añade un dígito a un número por detrás.
+   * @param n es el número entero introducido por el usuario
+   * @param x es el número entero que se le va a pegar por detrás
+   * @return es el resultado del número completo
+   */
+   public static int pegaPorDetras(int n, int x) {
+     n = n*10;
+     n = n + x;
+    
+     return n;
+   }
+      
+      ///////////////  EJERCICIO 12 /////////////////
+      
+  /**
+   * Añade un dígito a un número por delante.
+   * @param n es el número entero introducido por el usuario
+   * @param x es el número entero que se le va a pegar por delante
+   * @return es el resultado del número completo
+   */
+   public static int pegaPorDelante(int n, int x) {
+     n = voltea(n);
+     
+     n = n*10;
+     n = n + x;
+     
+     return n = voltea(n);
+   }
  }
  
