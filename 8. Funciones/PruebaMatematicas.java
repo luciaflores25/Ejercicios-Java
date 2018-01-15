@@ -7,7 +7,7 @@
 import java.util.Scanner;
 import matematicas.ManejoMatematicas;
 
-public class pruebaMatematicas {
+public class PruebaMatematicas {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
