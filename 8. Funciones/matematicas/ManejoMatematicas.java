@@ -148,7 +148,7 @@ public class ManejoMatematicas{
       if (x == 1){
         return aux % 10;
       }else{
-        for(int i = 1; i <= x; i++){
+        for(int i = 0; i < x; i++){
           aux = aux / 10;
         }
         
