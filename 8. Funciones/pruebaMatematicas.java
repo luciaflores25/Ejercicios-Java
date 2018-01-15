@@ -13,7 +13,7 @@ public class pruebaMatematicas {
     
     ///////////////  PRUEBA EJERCICIO 1 /////////////////
     
-    /*System.out.print("Introduce un número y te diré si es o no capicúa: ");
+    System.out.print("Introduce un número y te diré si es o no capicúa: ");
     int numeroIntroducido = Integer.parseInt(s.nextLine());
     
     if (matematicas.ManejoMatematicas.esCapicua(numeroIntroducido)) {
@@ -83,7 +83,7 @@ public class pruebaMatematicas {
      
      int posicionDelDigito = matematicas.ManejoMatematicas.digitoN(numeroIntroducido6, posicion);
      
-     System.out.println("En esa posición está el " + posicionDelDigito);*/
+     System.out.println("En esa posición está el " + posicionDelDigito);
      
      ///////////////  PRUEBA EJERCICIO 8 /////////////////
      
@@ -93,15 +93,38 @@ public class pruebaMatematicas {
      System.out.print("Ahora introduce un número (1 cifra): ");
      int cifra = Integer.parseInt(s.nextLine());
      
-     int ocurrencias = matematicas.ManejoMatematicas.posicionDeDigito(numeroIntroducido7, cifra);
+     int ocurrencia = matematicas.ManejoMatematicas.posicionDeDigito(numeroIntroducido7, cifra);
      
-     System.out.println("Ocurrencias: " + ocurrencias);
+     if(ocurrencia == -1){
+       System.out.println("El número " + cifra + " no se encuentra");
+     }else{
+       System.out.println("El número " + cifra + " aparece primero en la posición " + ocurrencia);
+     }
      
-     /*if(ocurrencias == 1){
-       System.out.println("El " + cifra + " aparece 1 vez");
-     } else {
-       System.out.println("El " + cifra + " aparece " + ocurrencias + " veces");
-     }*/
+     ///////////////  PRUEBA EJERCICIO 9 /////////////////
+     
+     System.out.print("\nIntroduce un número largo: ");
+     long numeroIntroducido8 = Long.parseLong(s.nextLine());
+     
+     System.out.print("¿Cuántos dígitos le quieres quitar al número por detrás?: ");
+     long quitarDetras = Long.parseLong(s.nextLine());
+     
+     long resultadoDetras = matematicas.ManejoMatematicas.quitarPorDetras(numeroIntroducido8, quitarDetras);
+     
+     System.out.println("Este es tu número acortado: " + resultadoDetras);
+     
+     ///////////////  PRUEBA EJERCICIO 10  /////////////////
+     
+     System.out.print("\nIntroduce un número largo: ");
+     int numeroIntroducido9 = Integer.parseInt(s.nextLine());
+     
+     System.out.print("¿Cuántos dígitos le quieres quitar al número por delante?: ");
+     int quitarDelante = Integer.parseInt(s.nextLine());
+     
+     int resultadoDelante = matematicas.ManejoMatematicas.quitarPorDelante(numeroIntroducido9, quitarDelante);
+     
+     System.out.println("Este es tu número acortado: " + resultadoDelante);
+    
   }
 }
 

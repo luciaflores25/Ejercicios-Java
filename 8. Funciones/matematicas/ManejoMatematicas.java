@@ -166,17 +166,17 @@ public class ManejoMatematicas{
      * @return la posición del dígito introducido en el caso que se encuentre en él
      */
      public static int posicionDeDigito(int n, int x) {
-      int posicion = 0;
-      int numero = voltea(n);
-      while (numero > 0) {
-        if (numero % 10 == x) {
-          return posicion;
-        }
-        numero /= 10;
-        posicion++;
-      }
-      
-      return -1;
+       int volteado = voltea(n);
+       int i = 0;
+       while (volteado >= 1) {
+         if (x == volteado % 10) {
+          return i;
+         }
+         volteado = volteado/10;
+         i++;
+       }
+       return -1;
+       
      }
      
      ///////////////  EJERCICIO 9 /////////////////
@@ -202,7 +202,7 @@ public class ManejoMatematicas{
      
   /**
     * Le quita a un número n dígitos por delante (por la izquierda).
-    * @param n es el número entero (long) introducido por el usuario.
+    * @param n es el número entero introducido por el usuario.
     * @param x es el número entero que se introduce para saber la cantidad de 
     * números que se le va a quitar al introducido desde la izquierda.
     * @return es el número introducido ya acortado
