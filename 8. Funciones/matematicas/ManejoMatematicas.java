@@ -18,10 +18,9 @@ public class ManejoMatematicas{
   /**
    * Comprueba si un número es Capicúa o no
    * @param n es el número introducido por el usuario
-   * @return <code>true</code> si el número introducido es capicúa 
-   * @return <code>false</code> si el número introducido no es capicúa
+   * @return <code>true</code> si el número introducido es capicúa y <code>false</code> si no es capicua
    */
-  public static boolean esCapicua(int n) {
+  public static boolean esCapicua2(int n) {
     int aux = n;
     int volteado = 0;
     
@@ -40,7 +39,7 @@ public class ManejoMatematicas{
    * @param n es el número introducido por el usuario
    * @return comprueba si es Capicúa
    */
-  public static boolean esCapicua2(int n) {
+  public static boolean esCapicua(int n) {
     return n == voltea(n);
   }
     
@@ -103,16 +102,13 @@ public class ManejoMatematicas{
     * @return <code>digitos</code> es donde se va almcenar el número de dígitos
     */
     public static int digitos(int n){
-      if(n == 0){
-        return 1;
-      }else{
-        int x = 0;
-        while(n > 0){
-          n = n / 10;
-          x++;
-        }
-        return x;
+      int digitos = 1;
+      
+      while(n > 9) {
+        n = n / 10;
+        digitos++;
       }
+      return digitos;
     }
   
   ///////////////  EJERCICIO 6 /////////////////
@@ -165,11 +161,11 @@ public class ManejoMatematicas{
      * @param x es el número entero que se quiere buscar en el número ya introducido
      * @return la posición del dígito introducido en el caso que se encuentre en él
      */
-     public static int posicionDeDigito(int n, int x) {
-       int volteado = voltea(n);
+     public static int posicionDeDigito(int numero, int digito) {
+       int volteado = voltea(numero);
        int i = 0;
        while (volteado >= 1) {
-         if (x == volteado % 10) {
+         if (digito == volteado % 10) {
           return i;
          }
          volteado = volteado/10;
