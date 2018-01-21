@@ -24,7 +24,7 @@ public class Ejercicio05 {
     int columna = 0;
     int minColumna = 0;
     int maxColumna = 0;
-    int minimo = 1002;
+    int minimo = 1001;
     int maximo = 0;
     
     System.out.println("Array de 6 filas por 10 columnas");
@@ -32,7 +32,7 @@ public class Ejercicio05 {
     //Aquí se introducen los números aleatorios para rellenar el array
     for (fila = 0; fila < 6; fila++){
       for (columna = 0; columna < 10; columna++){
-        array[fila][columna] = (int)(Math.random()* +1001);
+        array[fila][columna] = (int)(Math.random()* +1000);
         
         if (array[fila][columna] > maximo){
           maximo = array[fila][columna];
