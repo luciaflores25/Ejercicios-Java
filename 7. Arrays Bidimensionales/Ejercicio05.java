@@ -32,7 +32,7 @@ public class Ejercicio05 {
     //Aquí se introducen los números aleatorios para rellenar el array
     for (fila = 0; fila < 6; fila++){
       for (columna = 0; columna < 10; columna++){
-        array[fila][columna] = (int)(Math.random()* +1000);
+        array[fila][columna] = (int)(Math.random()*1001);
         
         if (array[fila][columna] > maximo){
           maximo = array[fila][columna];
