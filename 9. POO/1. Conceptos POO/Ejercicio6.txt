@@ -1,0 +1,15 @@
+Lista los atributos de la clase Alumno ¿Sería nombre uno de los atributos de la
+clase? Razona tu respuesta.
+
+  Atributos:
+    nombre
+    numExpediente
+    fechaNacimiento
+    curso
+    notas
+    direccion
+    telefono
+    dni
+    tieneHermanos
+    numHermanos
+    
