@@ -1,8 +1,7 @@
 package ejercicio03;
-
 /**
  *
- * @author Usuario
+ * @author Lucía Flores
  */
 public class Ave extends Animal {
   int numHuevos;

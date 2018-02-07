@@ -1,8 +1,11 @@
 package ejercicio03;
-
 /**
  *
- * @author Lucía Flores Programación Tema 9 POO Ejercicio 3
+ * @author Lucía Flores 
+ * 
+ * Programación 
+ * Tema 9 POO 
+ * Ejercicio 3
  *
  * Crea las clases Animal, Mamifero, Ave, Gato, Perro, Canario, Pinguino y
  * Lagarto. Crea, al menos, tres métodos específicos de cada clase y redefne
