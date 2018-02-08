@@ -4,14 +4,19 @@ package ejercicio01;
  * @author Lucía Flores
  */
 public class Caballo {
-  String nombre;
-  double peso;//peso en kg
-  int altura;//altura en cm
-  String color;
-  int velocidad = 0;
-  String raza;
-  String sillaDeMontar;
-  Persona jinete;
+  private String nombre;
+  private String sexo;
+  private double peso;//peso en kg
+  private int altura;//altura en cm
+  private String color;
+  private int velocidad = 0;
+  private String raza;
+  private String sillaDeMontar;
+  private Persona jinete;
+  
+  public Caballo() {
+    
+  }
 
   public Caballo(String nombre) {
     this.nombre = nombre;
@@ -23,6 +28,10 @@ public class Caballo {
 
   public double getPeso() {
     return peso;
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
   }
 
   public void setPeso(double peso) {
@@ -76,12 +85,48 @@ public class Caballo {
   public void setJinete(Persona jinete) {
     this.jinete = jinete;
   }
+
+  public String getSexo() {
+    return sexo;
+  }
+
+  public void setSexo(String sexo) {
+    this.sexo = sexo;
+  }
   
+  
+  
+  public Caballo seApareaCon(Caballo pareja, String nombreSiEsMacho, String nombreSiEsHembra){
+    if(this.sexo.equals(pareja.getSexo())){
+      System.out.println("Lo siento, no podemos tener crías");
+      return null;
+    }else{
+      System.out.println();
+      Caballo cria = new Caballo();
+      
+      if((int)(Math.random()*2)==0){
+        cria.setSexo("hembra");
+        cria.setNombre(nombreSiEsHembra);
+      }else{
+        cria.setSexo("macho");
+        cria.setNombre(nombreSiEsMacho);
+      }
+      return cria;
+    }
+  }
   
 
   @Override
   public String toString() {
-    return "Caballo\n --------\n" + "nombre: " + nombre + "\npeso: " + peso + "\naltura: " + altura + "\ncolor: " + color + "\nvelocidad: " + velocidad + "\nraza: " + raza + "\nsillaDeMontar: " + sillaDeMontar;
+    return "Caballo\n --------\n" 
+            + "nombre: " + nombre 
+            + "\npeso: " + peso 
+            + "\naltura: " + altura 
+            + "\ncolor: " + color 
+            + "\nvelocidad: " + velocidad 
+            + "\nraza: " + raza 
+            + "\nsexo: " + sexo 
+            + "\nsillaDeMontar: " + sillaDeMontar;
   }
   
   
