@@ -7,6 +7,12 @@ public class Mamifero extends Animal {
   int numMamas;
   int tiempoGestacion;
 
+  //Constructores
+  
+  public Mamifero(){
+    
+  }
+  
   public Mamifero(int numMamas, int tiempoGestacion, String nombre) {
     super(nombre);
     this.numMamas = numMamas;
@@ -17,7 +23,4 @@ public class Mamifero extends Animal {
     super(nombre);
   }
 
-  public void amamanta(Gato gatito){
-    System.out.println(this.nombre + " está amamantando a " + gatito.nombre);
-  }
 }

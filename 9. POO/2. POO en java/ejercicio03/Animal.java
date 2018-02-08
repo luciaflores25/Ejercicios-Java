@@ -1,20 +1,31 @@
 package ejercicio03;
+
 /**
  *
  * @author Lucía Flores
  */
 public class Animal {
-  String nombre;
-  String raza;
-  String color;
-  String sexo;
-  int altrua;
-  double peso;
 
+  //Atributos
+  
+  private String nombre;
+  private String raza;
+  private String color;
+  private String sexo;
+  private int altrua;
+  private double peso;
+
+  //Constructores
+  
+  public Animal(){
+    
+  }
+  
   public Animal(String nombre) {
     this.nombre = nombre;
   }
-  
+
+  //Setter and getter
   public String getNombre() {
     return nombre;
   }
@@ -62,13 +73,82 @@ public class Animal {
   public void setPeso(double peso) {
     this.peso = peso;
   }
-
-  @Override
-  public String toString() {
-    return "Animal{" + "nombre=" + nombre + ", raza=" + raza + 
-            ", color=" + color + ", sexo=" + sexo + ", altrua=" + 
-            altrua + ", peso=" + peso + '}';
+  
+  //Métodos
+    
+    //Crías de gatos
+  public Gato seApareaCon(Gato pareja, String nombreSiEsMacho, String nombreSiEsHembra){
+    if(this.sexo.equals(pareja.getSexo())){
+      System.out.println("Lo siento, no podemos tener crías");
+      return null;
+    }else{
+      System.out.println();
+      Gato cria = new Gato();
+      
+      if((int)(Math.random()*2)==0){
+        cria.setSexo("hembra");
+        cria.setNombre(nombreSiEsHembra);
+      }else{
+        cria.setSexo("macho");
+        cria.setNombre(nombreSiEsMacho);
+      }
+      return cria;
+    }
   }
   
+    //Crías de perros
   
+  public Perro seApareaCon(Perro pareja, String nombreSiEsMacho, String nombreSiEsHembra){
+    if(this.sexo.equals(pareja.getSexo())){
+      System.out.println("Lo siento, no podemos tener crías");
+      return null;
+    }else{
+      System.out.println();
+      Perro cria = new Perro();
+      
+      if((int)(Math.random()*2)==0){
+        cria.setSexo("hembra");
+        cria.setNombre(nombreSiEsHembra);
+      }else{
+        cria.setSexo("macho");
+        cria.setNombre(nombreSiEsMacho);
+      }
+      return cria;
+    }
+  }
+  
+  //Amamantar gatos
+  
+  public void amamanta(Gato gatito){
+    if(this.sexo.equals("macho")){
+      System.out.println("Lo siento, los machos no pueden amamantar a las crías");
+      
+    }else{
+     System.out.println(this.nombre + " está amamantando a " + gatito.getNombre());
+    }
+  }
+  
+  //Amamantar perros
+  
+  public void amamanta(Perro perrito){
+    if(this.sexo.equals("macho")){
+      System.out.println("Lo siento, los machos no pueden amamantar a las crías");
+      
+    }else{
+      System.out.println(this.nombre + " está amamantando a " + perrito.getNombre());
+    }
+  }
+
+  //toString
+  @Override
+  public String toString() {
+    return "Animal\n ---------\n"
+            + "nombre=" + nombre
+            + ", raza=" + raza
+            + ", color=" + color
+            + ", sexo=" + sexo
+            + ", altrua=" + altrua
+            + ", peso=" + peso + '}';
+  }
+
 }

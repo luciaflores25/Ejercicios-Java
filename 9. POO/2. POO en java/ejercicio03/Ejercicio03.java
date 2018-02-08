@@ -17,23 +17,26 @@ public class Ejercicio03 {
   public static void main(String[] args) {
 
     //Pruebas de los Gatos
-    Gato tere = new Gato("Tere");
-
+    
+    Gato marie = new Gato("Marie");
+    marie.setSexo("hembra");
     Gato garfield = new Gato("Garfield");
+    garfield.setSexo("macho");
+    
+    System.out.println("Hora de amamantar");
+    marie.amamanta(garfield);
 
-    tere.amamanta(garfield);
+    /*Gato isidoro = new Gato("Isidoro");
+    isidoro.setSexo("macho");
 
-    Gato felipe = new Gato("Felipe");
-
-    System.out.print("Felipe está maullando: ");
-    felipe.maulla();
+    System.out.print("Isidoro está maullando: ");
+    isidoro.maulla();
 
     Gato sofia = new Gato("Sofía");
     System.out.print("\nSofía está ronroneando: ");
-    sofia.ronronea();
+    sofia.ronronea();*/
     
-    Gato felix = new Gato("Felix");
-    felix.amamanta(sofia);
+    
     
     
   }
