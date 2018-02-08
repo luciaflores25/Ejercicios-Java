@@ -4,6 +4,10 @@ package ejercicio01;
  * @author Lucía Flores
  */
 public class Caballo {
+  
+  private static int numeroTotalDeCaballos;
+  private static int kilometrajeTotal;
+  
   private String nombre;
   private String sexo;
   private double peso;//peso en kg
@@ -120,13 +124,14 @@ public class Caballo {
   public String toString() {
     return "Caballo\n --------\n" 
             + "nombre: " + nombre 
-            + "\npeso: " + peso 
+            + "\nsexo: " + sexo
+            /*+ "\npeso: " + peso 
             + "\naltura: " + altura 
             + "\ncolor: " + color 
             + "\nvelocidad: " + velocidad 
             + "\nraza: " + raza 
-            + "\nsexo: " + sexo 
-            + "\nsillaDeMontar: " + sillaDeMontar;
+             
+            + "\nsillaDeMontar: " + sillaDeMontar*/;
   }
   
   
