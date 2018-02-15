@@ -8,7 +8,7 @@
  */
  
 import java.util.Scanner;
-public class Ejercicios29a34 {
+public class Ejercicio29a34 {
   public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
     
