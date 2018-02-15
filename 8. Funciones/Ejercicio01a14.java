@@ -231,7 +231,7 @@ public class Ejercicio01a14 {
           ///////////////  PRUEBA EJERCICIO 14  /////////////////
 
           System.out.println("HAS ELEGIDO LA PRUEBA DEL EJERCICIO 14");
-          System.out.println("Este programa le pega por delante un dígito a un número introducido por el usuario\n");
+          System.out.println("Este programa junt dos números introducidos por el usuario\n");
 
           System.out.println("Juntando el 21 y el 40 da el " + matematicas.ManejoMatematicas.juntaNumeros(21, 40));
           System.out.println("Juntando el 789 y el 250 da el " + matematicas.ManejoMatematicas.juntaNumeros(789, 250));
