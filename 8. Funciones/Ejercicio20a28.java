@@ -141,13 +141,7 @@ public class Ejercicio20a28 {
       }
 
     } while (pruebas != 0);
-
-    /*   
-    System.out.print("Array rotado 3 pasos a la derecha: ");
-    ManejoArrays.muestraArrayInt(ManejoArrays.rotaDerechaArrayInt(array, 3));
     
-    System.out.print("Array rotado 4 pasos a la izquierda: ");
-    ManejoArrays.muestraArrayInt(ManejoArrays.rotaIzquierdaArrayInt(array, 4));*/
   }
 
 }
