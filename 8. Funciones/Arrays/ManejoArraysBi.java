@@ -26,26 +26,6 @@ public class ManejoArraysBi {
   }
 
   /**
-   * Genera un array bidimensional de tamaño [fila][columna] de números
-   * aleatorios
-   *
-   * @param fila número entero que indica el tamaño de las filas del array
-   * @param columna número entero que indica el tamaño de las columnas del array
-   * @return devuelve el array generado
-   */
-  public static int[][] generaArrayBiInt(int fila, int columna) {
-
-    int[][] x = new int[fila][columna];
-
-    for (int i = 0; i < fila; i++) {
-      for (int j = 0; j < columna; j++) {
-        x[i][j] = ((int) (Math.random() * 10));
-      }
-    }
-    return x;
-  }
-
-  /**
    * Muestra un array bidimensional previamente generado que se pasa como
    * parámetro
    *
@@ -56,7 +36,7 @@ public class ManejoArraysBi {
     for (int i = 0; i < a.length; i++) {
       System.out.print("Fila: " + i);
       for (int j = 0; j < a[0].length; j++) {
-        System.out.printf("%10d ", a[i][j]);
+        System.out.printf("%5d ", a[i][j]);
 
       }
       System.out.println();

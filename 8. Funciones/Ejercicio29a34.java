@@ -48,14 +48,14 @@ public class Ejercicio29a34 {
           System.out.println("HAS ELEGIDO GENERAR UN ARRAY CON 2 PARÁMETROS\n");
           System.out.println("Aquí lo tienes: ");
 
-          int[][] array2 = ManejoArraysBi.generaArrayBiInt(10, 5);
+          int[][] array2 = ManejoArraysBi.generaArrayBiInt(10, 10, 0, 100);
           ManejoArraysBi.muestraArrayBiInt(array2);
 
           break;
         case 3:
           System.out.println("HAS ELEGIDO EXTRAER UNA FILA DE UN ARRAY BIDIMENSIONAL\n");
 
-          int[][] array3 = ManejoArraysBi.generaArrayBiInt(10, 5);
+          int[][] array3 = ManejoArraysBi.generaArrayBiInt(10, 10, 0, 100);
           ManejoArraysBi.muestraArrayBiInt(array3);
 
           System.out.print("Introduce el número de la fila que queires sacar: ");
@@ -70,7 +70,7 @@ public class Ejercicio29a34 {
         case 4:
           System.out.println("HAS ELEGIDO EXTRAER UNA COLUMNA DE UN ARRAY BIDIMENSIONAL\n");
 
-          int[][] array4 = ManejoArraysBi.generaArrayBiInt(10, 5);
+          int[][] array4 = ManejoArraysBi.generaArrayBiInt(10, 10, 0, 100);
           ManejoArraysBi.muestraArrayBiInt(array4);
 
           System.out.print("Introduce el número de la columna que queires sacar: ");
@@ -90,7 +90,7 @@ public class Ejercicio29a34 {
 
           int[] coordenadasArray;
 
-          int[][] array5 = ManejoArraysBi.generaArrayBiInt(10, 5);
+          int[][] array5 = ManejoArraysBi.generaArrayBiInt(10, 10, 0, 100);
           ManejoArraysBi.muestraArrayBiInt(array5);
           coordenadasArray = ManejoArraysBi.coordenadasEnArrayBiInt(array5, numABuscar);
           System.out.print("Coordenadas: ");
