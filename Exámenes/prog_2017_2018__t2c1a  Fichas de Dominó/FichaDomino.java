@@ -57,9 +57,10 @@ public class FichaDomino {
   
   public boolean encaja(FichaDomino f){
     
-    if(this.lado1 == (f.getLado1()) || (this.lado2 == (f.getLado2()))){
+    if ((this.lado1 == f.getLado1()) || (this.lado1 == f.getLado2()) 
+      || (this.lado2 == f.getLado1()) || (this.lado2 == f.getLado2())) {
       return true;
-    }else{
+    } else {
       return false;
     }//Cierra el if
   }
